@@ -1,9 +1,5 @@
-# app/controllers/items_controller.rb
-
 class ItemsController < ApplicationController
   def index
-    @list_of_items = Item.all.order({ :created_at => :desc })
-
-    render({ :template => "item_templates/list" })
+    @items = Item.all
   end
 end

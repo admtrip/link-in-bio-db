@@ -1,11 +1,6 @@
-<!-- app/views/item_templates/list.html.erb -->
-
-<h1>Howdy!</h1>
-
-<% @list_of_items.each do |the_item| %>
+<h1>All Items</h1>
+<% @items.each do |item| %>
   <div>
-    <a href="<%= the_item.link_url %>">
-      <%= the_item.link_description %>
-    </a>
+    <a href="<%= item.link_url %>"><%= item.link_description %></a>
   </div>
 <% end %>
